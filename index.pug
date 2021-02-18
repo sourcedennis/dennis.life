@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='Stylesheet', href='style.css')
+    title='Dennis\'s page'
+  body
+    div#header
+      div#avatar
+      div#info
+        h1 Dennis
+        hr
+        table
+          tr
+            th GitHub
+            td
+              a(href='https://github.com/sourcedennis') sourcedennis
+          tr
+            th Blog
+            td
+              a(href='https://blog.dennis.life/') blog.dennis.life
+          tr
+            th E-mail
+            td.plain me [at] dennis [dot] life
+          tr
+            th Twitter
+            td
+              a(href='https://twitter.com/sourcedennis') sourcedennis
+          tr
+            th DeviantArt
+            td
+              a(href='https://www.deviantart.com/sourcedennis') sourcedennis
+
+    hr
+
+    h2 Featured Projects
+
+    a.projectlink.left(href='/demo/pathtracer/')
+      div.project#pathtracer
+        span.title WebAssembly Pathtracer
+    a.projectlink.right(href='#')
+      div.project#atlaspacker
+        span.title Sprite Atlas Packer (Blog Post)
+    a.projectlink.left(href='/demo/non-euclidean-grid/')
+      div.project#noneuclideangrid
+        span.title Non-Euclidean Grid
+    a.projectlink.right(href='https://blog.dennis.life/2020/08/08/voxel-city-generation/')
+      div.project#voxelcity
+        span.title Voxel City (Blog Post)
+
+    div.footer
+      a(href='https://github.com/sourcedennis/dennis.life') Website Source Code
